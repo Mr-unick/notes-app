@@ -17,7 +17,7 @@ useEffect(()=>{
     const getallnotes=async()=>{
     const res=await Getnote();
     Setnotes(res.data)
-   
+   console.log("hhhhhh");
   }
     getallnotes()
   

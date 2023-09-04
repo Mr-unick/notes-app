@@ -1,5 +1,5 @@
 import axios from 'axios';
-const URL='http://localhost:8000'
+const URL='http://localhost:7000'
 
 //addnote api
 

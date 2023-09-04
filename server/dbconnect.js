@@ -1,8 +1,9 @@
 const mongoose=require('mongoose')
 const nodemon = require('nodemon')
+const pass="aRe3Wg1DfEWhKLff"
 const conn=async ()=>{
     try{
-await mongoose.connect('mongodb+srv://nikhillende9121:notesapp@notesapp.6j68aib.mongodb.net/test')
+await mongoose.connect(`mongodb+srv://nikhillende9121:${pass}@cluster0.q2yopff.mongodb.net/`)
 console.log("connetion succcefull")
     }
     catch(error){

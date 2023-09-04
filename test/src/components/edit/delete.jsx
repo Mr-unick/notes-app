@@ -3,6 +3,8 @@ import { useNavigate,useParams} from 'react-router-dom';
 import { useState,useEffect } from "react";
 import { Deletenote,Getonenote } from "../../service/api";
 import '../adduser/adduser.css';
+
+
 function Delete() {
 const navigate =useNavigate()
 const {id}=useParams();
@@ -27,9 +29,9 @@ const Delete= async()=>{
     return ( 
         <div  className='adduser'>
             <h1> DELETE NOTE</h1>
-            <TextField onChange={(e)=>{onvaluechage(e)}} id="tittle" variant="outlined" name='Tittle' value={note.Tittle}/>
+            <TextField  id="tittle" variant="outlined" name='Tittle' value={note.Tittle}/>
             <div id='form'>
-            <TextField onChange={(e)=>{onvaluechage(e)}} id="discription" multiline rows={10} name='Discription' value={note.Discription} />
+            <TextField  id="discription" multiline rows={10} name='Discription' value={note.Discription} />
             </div>
             <div id='btndiv'><Button id='btn' onClick={(e)=>{Delete(e)}}variant="contained">DELETE</Button>
             <Button id='btn' onClick={(e)=>{cancel(e)}}variant="contained">CANCEL</Button></div>
